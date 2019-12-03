@@ -1,0 +1,5 @@
+selenium:
+    build: .
+    expose:
+        - "4200"
+    privileged: true
