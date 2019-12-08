@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import logging
-
+from credentials import username, password
 
 class LoginTarget:
 
@@ -15,8 +15,8 @@ class LoginTarget:
         :return:
         """
 
-        login_creds = 'your login'
-        login_passwd = 'your password'
+        login_creds = username
+        login_passwd = password
 
         driver.find_element_by_link_text("Sign in").click()
         driver.find_element_by_id("username").clear()

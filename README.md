@@ -14,6 +14,15 @@ Import a recent Connections.csv file in Google Spreadsheets from your LinkedIn A
 
 ### Running:
 
+Touch a file named `credentials.py` and enter
+
+```
+username = ''
+password = ''
+```
+
+and run the container with
+
 docker-compose
 
     ```
@@ -23,8 +32,9 @@ docker-compose
 
 ### Disclaimer
 
-!! Only for educational purposes.
+This is a Proof of Concept. 
 
-!! Proof of concept only. 
+This violates Linkedins TOS.
 
-!! Private emails contact retrieval only.
+Only for educational purposes!
+
