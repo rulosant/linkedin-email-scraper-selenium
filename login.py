@@ -23,6 +23,7 @@ class LoginTarget:
         driver.find_element_by_id("username").send_keys(login_creds)
         driver.find_element_by_id("password").clear()
         driver.find_element_by_id("password").send_keys(login_passwd)
-        driver.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Show'])[1]/following::button[1]").click()
+#        driver.find_element_by_xpath(
+#            "(.//*[normalize-space(text()) and normalize-space(.)='Show'])[1]/following::button[1]").click()
+        driver.find_element_by_xpath('//button[contains(text(),"Sign in")]').click()
         logging.info('Login..')
